@@ -16,7 +16,7 @@ public class ByteMagic {
             hex[j * 2] = HEX_ARRAY[v >>> 4];
             hex[j * 2 + 1] = HEX_ARRAY[v & 0x0F];
         }
-        return "0x" + new String(hex);
+        return new String(hex);
     }
 
     public static int indexOf(byte[] sequence, byte[] target) {
